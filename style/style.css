@@ -6,3 +6,170 @@
   font-optical-sizing: auto;
 
 }
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Shared styles */
+.display-flex{
+    display: flex;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.section-title{
+    font-size:2.81rem;
+    font-weight: 700;
+}
+
+/* dark02 */
+.text-dark2{
+    color:#424242;
+}
+.btn-primary{
+    background-color: #FF900E;
+    border:none;
+    border-radius:8px;
+    font-weight: 600;
+    font-size:1.25rem;
+    padding:20px 25px;
+    color:#ffffff;                                                                                  
+}
+main{
+    width:75%;
+    max-width:1440px;
+    margin:0 auto;
+}
+/* dark03 */
+.text-dark3{
+    color:#727272;
+}
+
+
+/* dark 01 */
+.text-dark1{
+    color:#131313;
+}
+header{
+    margin-bottom: 130px;
+}
+
+/* header styles */
+.navbar,.banner{
+    width:75%;
+    max-width:1440px;
+    margin:0 auto;
+    
+}
+main>section{
+    margin-top: 130px;
+}
+
+/* navbar related styles */
+.navbar{
+justify-content: space-between;
+align-items:center;
+}
+
+.nav-item{
+    list-style:none;
+    margin-right:30px;
+}
+.nav-link{
+    text-decoration:none;
+    line-height: 1.4rem;
+    font-weight: 600;
+}
+.brand{
+    font-weight: 700;
+    font-size:2.5rem;
+}
+
+/* banner-related styles */
+.banner-img{
+   margin-bottom: 45px;
+    width:100%;
+}
+.banner-content{
+    max-width:850px;
+    margin:0 auto;
+    text-align:center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size:4rem;
+    font-weight:bold;
+
+}
+/* team and feaute related styels */
+
+.teams{
+    align-items:center;
+}
+.team-img-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:14px;
+    margin-right:73px;
+}
+.our-features{
+    max-width:530px;
+}
+
+
+.comla{
+    color:#FF900E;
+}
+.medium{
+    font-weight:500;
+}
+
+
+/* responsive media query */
+@media screen and (max-width:576px){
+    .navbar,
+    .nav-links,
+    .teams{
+        flex-direction: column;
+    }
+   .brand{
+    font-size:1.8rem;
+   }
+   .nav-item{
+    margin-right:0;
+   }
+   .banner-title{
+    font-size:3rem;
+   }
+   .banner-img{
+
+    width:100%;
+    
+   }
+   .team-img-container{
+    grid-template-columns: repeat(1,1fr);
+    margin-right:0;
+   }
+   .our-features{
+    max-width:100%;
+   }
+}
+/* responsive design for medium devices */
+@media screen and (min-width:577px) and (max-width:992px){
+.teams{
+    flex-direction: column;
+
+}
+.team-img-container{
+    grid-template-columns: repeat(2,1fr);
+    margin-right:0;
+    gap:40px;
+}
+.our-features{
+    margin:20px 50px;
+}
+
+}
